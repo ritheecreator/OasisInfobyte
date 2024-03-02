@@ -1,46 +1,48 @@
 html, body {
-    height: 100%; /* Make sure the parent elements are full height */
-    margin: 0; 
+    height: 100%;
+    margin: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #E4E2DD;
-    display: flex; /* Use flexbox to center */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: 50%;
-    height: 50%;
+    width: 80%; 
+    height: auto;
+    max-height: 800px;
+    max-width: 600px; /* Ensures the container does not get too wide on larger screens */
 }
 
 .logo img {
-    width: 400px; /* Adjust as needed */
-    height: 150px; /* Set a specific height to crop to */
-    object-fit: cover; /* This will crop the image to fill the container */
-    object-position: center; /* Adjusts the positioning of the image within its container */
+    width: 100%; /* Make the logo responsive */
+    max-width: 400px; /* Maximum logo width */
+    height: 150px; /* Maintain aspect ratio */
+    object-fit: cover;
+    object-position: center;
 }
 
 #todo-list {
-    width: 500px;
+    width: 90%; 
+    max-width: 500px; 
     margin: auto;
     text-align: center;
     background-color: #fdfcf8;
 }
 
 .todo {
-    border: 4px solid #000; 
+    border: 4px solid #000;
     padding: 20px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 #tasks li {
     list-style: none;
     margin-top: 10px;
-    font-family: "Raleway", sans-serif;
     font-weight: 300;
     text-align: left;
 }
@@ -49,12 +51,11 @@ body {
     padding: 10px;
     background-color: #ecece9;
     border-radius: 5px;
-    position: relative;
 }
 
 .task.completed .task-text {
     text-decoration: line-through;
-    color: #FF89A9; /* Grey out completed tasks */
+    color: #FF89A9;
 }
 
 .fa {
@@ -64,35 +65,33 @@ body {
 }
 
 .fa:hover {
-  color: #FF89A9;
-  
+    color: #FF89A9;
 }
 
-.task-checkbox{
+.task-checkbox {
     float: left;
 }
 
-#new-task{
-    width: 250px;
+#new-task {
+    width: 100%; /* Full width to be more responsive */
+    max-width: 250px; /* Maximum width */
     height: 20px;
 }
 
-::placeholder{
-    font-family: "Raleway", sans-serif;
+::placeholder {
+    font-family: 'Raleway', sans-serif;
 }
 
-button{
+button {
     background-color: #FF89A9;
     color: white;
-    border-radius: 4px; 
+    border-radius: 4px;
     border: none;
     margin: 2px;
     padding: 5px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
 }
 
-button:hover{
+button:hover {
     background-color: #f3cdd7;
 }
 
