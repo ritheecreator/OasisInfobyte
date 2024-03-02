@@ -95,3 +95,55 @@ button{
 button:hover{
     background-color: #f3cdd7;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container, #todo-list, .logo img {
+        width: 90%; /* Make elements wider on smaller screens */
+    }
+
+    .logo img {
+        max-width: 100%; /* Allow the logo to scale down on smaller screens */
+    }
+
+    #new-task, .todo, #tasks li {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 430px) {
+    body {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .container {
+        width: 100%; /* Adjusted for better fit */
+    }
+
+    .task-text {
+        font-size: 14px; /* Adjusted font size */
+        word-wrap: break-word; /* Ensure long words do not overflow */
+    }
+
+    #tasks li, .todo {
+        padding: 10px; /* Adjust padding to ensure content fits well */
+       overflow-y: scroll;
+    }
+
+    .logo img {
+        width: 80%; /* Adjust logo size on smaller screens */
+        margin: 0 auto; /* Center the logo if it's not already */
+    }
+
+    #todo-list {
+        max-height: 65vh; /* Adjust the height for smaller screens */
+        width: 100%; /* Adjusted for better fit */
+  
+    }
+}
+
+/* Additional responsive adjustments */
+.task-text {
+    word-wrap: break-word; /* Apply word wrapping for all screen sizes */
+}
