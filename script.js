@@ -64,7 +64,7 @@ function toggleTaskStatus(checkbox) {
     } else {
         taskEl.classList.remove("completed");
     }
-    saveTasks(); // Update this if you're saving the completion status to localStorage
+    saveTasks(); 
 }
 
 function deleteTask(element) {
